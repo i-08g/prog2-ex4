@@ -1,17 +1,18 @@
+
+```
 maze(){
-初期位置
-サイズx
-サイズy
-壁:”#”
-空白:” ”
-スタート地点:”s”
-ゴール地点:”G”
-テキストファイルを読み込み
-変数に格納する
-アクセサ:なし
-プレイヤーの現在地
-ゴール判定
-移動判定
+    サイズx
+    サイズy
+    壁:”#”
+    空白:” ”
+    スタート地点:”s”
+    ゴール地点:”G”
+    テキストファイルを読み込み
+    変数に格納する
+    アクセサ:なし
+    ゴール判定
+    移動判定
+}
 
 class maze{
 	public int initialPositionX;
@@ -26,4 +27,33 @@ class maze{
 	ArrayList x 
 	public int x;
 	public int y;
+}
+```
+
+---
+
+## PlayerClassの設計
+
+```
+Player{
+    歩数を記録する
+    上下左右に移動
+    プレイヤーの現在地
+    初期位置
+}
+
+class Player{
+    WalkCounter
+    CurrentLocation    
+    InitialLocation
+    StepUp()
+    StepDown()
+    StepRight()
+    StepLeft()
+}
+```
+
+
+
+
 
