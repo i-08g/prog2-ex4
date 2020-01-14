@@ -27,6 +27,9 @@ class maze{
 	ArrayList x 
 	public int x;
 	public int y;
+    boolean canRead();
+    String inputPath;
+    void display;
 }
 ```
 
